@@ -21,6 +21,7 @@
 ### groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|name|string|null: false, unique: true, index: true|
 |user_id|integer|null: false|
 |group_id|integer|null: false|
 ### Association

@@ -24,8 +24,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true, index: true|
-|user_id|integer|null: false|
-|group_id|integer|null: false|
 ### Association
 - has_many :users,through: :group_users
 - has_many :group_users
@@ -34,8 +32,10 @@
 ### messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string||
+|user_id|integer|null: false|
+|group_id|integer|null: false|
 ### Association
 - belongs_to :user
 - belongs_to :group

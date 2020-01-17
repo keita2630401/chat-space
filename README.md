@@ -32,7 +32,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string|null: false|
+|image|string||
 ### Association
 - belongs_to :user
 - belongs_to :group

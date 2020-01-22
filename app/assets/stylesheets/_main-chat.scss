@@ -1,0 +1,135 @@
+.chat-main{
+  width: calc(100% - 300px);
+  background-color: $main-white;
+  float: left;
+}
+
+.chat-main__group{
+  background: #ffffff;
+  height: 100px;
+  border-bottom: 1px solid #eeeeee;
+  padding-left: 40px;
+  display: flex;
+
+  a{
+    color: $lite-blue;
+  }
+}
+
+.chat-main__left-box{
+    margin-top: 35px;
+
+  .chat-main__left-box-member{
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+  }
+}
+
+.current-group{ 
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.chat-main__group-edit-btn{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 30px;
+  border: solid 1px $lite-blue;
+  position: absolute;
+  right: 40px;
+}
+
+.chat-main__message{
+  background-color: $main-white;
+  height: calc(100% - 190px - 40px - 92px);
+  padding:46px 40px;
+
+  .chat-main__message-info{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .chat-main__message-talk{
+    color: $glay;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .chat-main__message-date{
+    color: #999999;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  .message-text{
+  color: $glay;
+  font-size: 14px;
+  margin-bottom: 10px;
+  }
+}
+
+.chat-main__form{
+  height: 90px;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: #ddd;
+  position: fixed;
+  bottom: 0;
+
+  .form{
+    display: flex;
+
+    .new-message{
+      display: flex;
+      width: 75%;
+
+      .input-box{
+        position: relative;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: $glay;
+        display: flex;
+        margin-top: 20px;
+
+        &__text{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: $glay;
+          border-style: none;
+        }
+
+        &__image{
+          font-size: 25px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .fa-image{
+    padding-left: 40%;
+    color: black;
+  }
+  
+  .input-box__image__file{
+    display: none;
+  }
+}
+
+.submit-btn{
+  width: 100px;
+  height: 50px;
+  padding: 0 30px;
+  margin-left: 15px;
+  background-color: $lite-blue;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}  

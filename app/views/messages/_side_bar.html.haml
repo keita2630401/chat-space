@@ -1,0 +1,19 @@
+.chat-side
+ .side-bar__user
+  .side-box
+   %p.side-box__user-name
+    mario
+   %ul.side-box__right
+    %li.side-box__edit
+     =link_to "#"  do
+      =icon('fas', 'edit')
+    %li.side-box__new
+     =link_to "#" do
+      =icon('fas','cog')
+
+ .side-bar__group
+  %p.side-bar__group-name
+   kokoko
+  %p.side-bar__group-message
+   こんにちは
+   

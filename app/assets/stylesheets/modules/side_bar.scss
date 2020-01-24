@@ -10,6 +10,7 @@
   height: 100px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
   
 .side-box{
@@ -39,25 +40,26 @@
   }
 }
 
-.side-bar__group{
-  background-color: #2f3e51;
-  height: 65px;
-  box-sizing: border-box;
-  margin-bottom: 40px;
+.side-bar__groups-list{
+  height: 100%;
   padding: 20px 20px 0;
 
-  .side-bar__group-name {
-    font-size: 15px;
-    margin-bottom: 5px;
-    color: $sub-white;
-    font-weight: bold;
-
+  .group{
+    margin-bottom: 40px;
   }
 
-  .side-bar__group-message {
-    font-size: 11px;
-    color: $sub-white;
-    font-weight: bold;
-  }
+   .group__name {
+     font-size: 15px;
+     margin-bottom: 5px;
+     color: $sub-white;
+     font-weight: bold;
+
+   }
+
+   .group__message {
+     font-size: 11px;
+     color: $sub-white;
+     font-weight: bold;
+   }
 }
   

@@ -1,7 +1,7 @@
 .chat-main{
   width: calc(100% - 300px);
   background-color: $main-white;
-  float: left;
+  position: relative;
 
 
 &__group{
@@ -44,7 +44,7 @@
 
  &__message{
   background-color: $main-white;
-  height: calc(100% - 190px - 40px - 92px);
+  height: calc(100vh - 190px - 90px);
   padding:46px 40px;
 
   .chat-main__message-info{
@@ -76,10 +76,10 @@
 .chat-main__form{
   height: 90px;
   width: 100%;
-  padding: 0px 20px;
   background-color: #ddd;
-  position: fixed;
   bottom: 0;
+  position: absolute;
+  left: 0px;
 
   .form{
     display: flex;
@@ -108,7 +108,7 @@
           font-size: 25px;
           position: absolute;
           top: 10px;
-          right: 10px;
+          right: 72px;
           cursor: pointer;
           line-height: 20px;
         }

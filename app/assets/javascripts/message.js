@@ -61,7 +61,6 @@ $('#new_message').on('submit', function(e){
     var html = buildHTML(data);
     $('.chat-main__message').append(html);    
     $('form')[0].reset();
-    console.log($('.chat-main__message')[0])
     $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
     return false
   })
@@ -87,8 +86,8 @@ var reloadMessages = function() {
       $.each(messages,function(i,message){
         insertHTML += buildHTML(message)
   });
-  $('.main-chat__center').append(insertHTML);
-        $('.main-chat__center').animate({ scrollTop: $('.main-chat__center')[0].scrollHeight});
+  $('.chat-main__message').append(insertHTML);
+        $('.main-chat__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
         $("#new_message")[0].reset();
       }
     })

@@ -87,7 +87,7 @@ var reloadMessages = function() {
         insertHTML += buildHTML(message)
   });
   $('.chat-main__message').append(insertHTML);
-        $('.main-chat__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
+        $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
         $("#new_message")[0].reset();
       }
     })

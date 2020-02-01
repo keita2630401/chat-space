@@ -12,13 +12,7 @@
       .chat-main__group-edit-btn
         = link_to "Edit", edit_group_path(params[:group_id]), method: :get
   .chat-main__message
-    .chat-main__message-info
-      %p.chat-main__message-talk
-        
-      %p.chat-main__message-date
-      
-    %p.message-text
-      = render @messages
+    = render @messages
   .chat-main__form
     .form
       = form_for [@group, @message] do |f|

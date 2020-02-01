@@ -1,7 +1,6 @@
 .chat-main{
     width: calc(100% - 300px);
     background-color: $main-white;
-    position: relative;
   
   
   &__group{
@@ -74,7 +73,34 @@
     }
    }
   }
+
+.chat-main__message .message{
+    padding-bottom: 40px;
+}
+
+.upper-message{
+    margin-bottom: 10px;
+    display: flex;
   
+  &__user-name{
+    color: #434a54;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__date{
+    color: #999999;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+  
+  .lower-message__content{
+    color: #434a54;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
   .chat-main__form{
     background-color: #ddd;
     padding: 20px 40px;
@@ -146,3 +172,4 @@
     color: white;
     cursor: pointer;
   }  
+

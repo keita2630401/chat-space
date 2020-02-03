@@ -1,6 +1,6 @@
 $(function(){ 
   function buildHTML(message){
-    if ( message.content&&message){
+    if ( message.content&&message.image){
       var html =
         `<div class="message" data-message-id=${message.id}>
           <div class="upper-message">
@@ -41,6 +41,9 @@ $(function(){
             <div class="upper-message__user-name">
               ${message.user_name}
             </div>
+          </div>
+          <div class="lower-message">
+          <img src="${message.image}" class="lower-message__image" >
           </div>`
       };
   return html;
